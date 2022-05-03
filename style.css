@@ -1,0 +1,192 @@
+body {
+    box-sizing: border-box;
+    background: linear-gradient(212.69deg, #FA8780 19.54%, rgba(0, 251, 251, 0.699) 100.39%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    box-sizing: border-box;
+    background: #d9c7dba9;
+    border-radius: 35px;
+    width: 90%;
+    max-width: 80vw;
+    height: 90%;
+    max-height: 90vh;
+}
+
+.perfil {
+    height: 15%;
+    padding: 4%;
+    display: flex;
+    align-items: center;
+}
+
+.foto {
+    border-radius: 50%;
+    border: 0.5px solid #a75bafa9;
+    max-width: 125%;
+    max-height: 125%;
+    position: relative;
+    left: 4%;
+}
+
+.nome {
+    position: relative;
+    left: 5%;
+    width: 60%;
+    line-height: 30px;
+}
+
+.nome h2 {
+    font-size: 160%;
+}
+
+.nome h4 {
+    font-size: 100%;
+    color: #000000;
+}
+
+.tema button {
+    align-self: baseline;
+    font-size: 2.51vh;
+    font-weight: 300;
+    float: right;
+    padding: 8px 10px;
+    background: #fdc0f5;
+    border-radius: 100px;
+    border: 1px solid rgba(255, 89, 233, 0.377);
+    position: relative;
+    right: 10% !important;
+    color: #464343;
+}
+
+.projetos {
+    box-sizing: border-box;
+    background: rgba(250, 135, 128, 0.47);
+    border: 1.5px solid #7C6D6D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    position: relative;
+    top: 1%;
+    left: 5vw;
+    width: 70vw;
+    height: 55vh;
+}
+
+.scroll {
+    overflow-y: scroll;
+    border-radius: 35px;
+    height: 46vh;
+    position: relative;
+    top: 4vh;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 35px;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+    background-color: #FA8780;
+    border-radius: 35px;
+}
+
+.projetos h3 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200%;
+    text-align: center;
+    margin: 1% auto;
+}
+
+.projetos p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 15px;
+    text-align: center;
+    display: grid;
+    gap: 10vh;
+
+}
+
+.dark {
+    background: linear-gradient(182.29deg, rgba(107, 21, 99, 0.685) 1.92%, rgba(0, 48, 64, 0.73) 97.87%);
+}
+
+.dark .container {
+    background: #1b0927b2;
+    color: antiquewhite;
+}
+
+.dark .nome h4 {
+    color: antiquewhite
+}
+
+.dark .foto {
+    border: 1px solid violet;
+}
+
+.dark .projetos {
+    color: #000000;
+}
+
+.dark button {
+    border: #fdc0f5;
+    background: #9b069b86;
+    color: #fdc0f5;
+  
+}
+
+.tema img{
+    width: 25px;
+    height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .container{
+        max-width: 90% !important;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+    }
+    .foto{
+    width: 50px;
+    }
+    .nome{
+        line-height: 100%;
+        width: 90%;
+    }
+    .nome h2{
+        font-size: 95%;
+    }
+    .nome h4{
+        font-size: 70%;
+    }
+    .tema button{
+        display: none;
+    }
+    .projetos{
+        height: 70%;
+        width: 90%;
+    }
+    .projetos h3{
+        font-size: 110%;
+        
+    }
+    .projetos p{
+        font-size: 80%;
+    }
+    
+}
+
